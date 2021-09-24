@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'autos-disp',
     loadChildren: () => import('./pages/autos-disp/autos-disp.module').then( m => m.AutosDispPageModule)
   },
+  {
+    path: 'viajes',
+    loadChildren: () => import('./pages/viajes/viajes.module').then( m => m.ViajesPageModule)
+  },
 ];
 
 @NgModule({

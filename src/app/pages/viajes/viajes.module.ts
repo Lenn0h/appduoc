@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AutosDispPageRoutingModule } from './autos-disp-routing.module';
+import { ViajesPageRoutingModule } from './viajes-routing.module';
 
-import { AutosDispPage } from './autos-disp.page';
+import { ViajesPage } from './viajes.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AutosDispPageRoutingModule,
+    ViajesPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [AutosDispPage]
+  declarations: [ViajesPage]
 })
-export class AutosDispPageModule {}
+export class ViajesPageModule {}
