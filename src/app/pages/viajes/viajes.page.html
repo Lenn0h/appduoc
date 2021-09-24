@@ -2,7 +2,15 @@
 
 <ion-content>
   <ion-text >
-    <h1 class="ion-padding">Aquí podrás ver tus viajes:</h1>
+    <h1 class="ion-padding">Lista de tus viajes:</h1>
+    <ion-list *ngFor="let vi of viajes" >
+      <ion-item>
+          <ion-avatar slot="start">
+            <img [src]="vi.scrimagen">
+          </ion-avatar>
+          <ion-label>{{vi.fecha}} / {{vi.hora}} / {{vi.precio}}</ion-label>
+      </ion-item>
+    </ion-list>
   </ion-text>
 </ion-content>
 
